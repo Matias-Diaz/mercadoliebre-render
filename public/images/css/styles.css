@@ -1,0 +1,380 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  background-color: #ebebeb;
+}
+
+header {
+  background-color: #eac926;
+  padding: 10px;
+}
+
+header nav p {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+header form input {
+  font-family: inherit;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 1.5px;
+}
+
+.fa-truck {
+  color: rgb(38, 230, 38);
+}
+
+.fa-magnifying-glass {
+  font-size: 18px;
+}
+
+.ofertas-y-ultima-visita {
+  font-size: 15px;
+  text-align: center;
+}
+
+.main-nav {
+  display: none;
+}
+
+.nav-bar li {
+  padding: 10px;
+  list-style: none;
+  padding: 5px;
+}
+
+.nav-bar2 li {
+  padding: 10px;
+  list-style: none;
+  padding: 5px;
+  color: #000000;
+}
+
+.burger-menu {
+  color: #f9f9fa;
+  font-size: 30 px;
+  width: 35px;
+  height: 35px;
+  background-color: #1259c3;
+  display: flex;
+  border-radius: 20%;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 18px;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+/*.description {
+   font-size: 16px;
+   display: none;
+} */
+.cajita .description {
+  font-size: 16px;
+  display: none;
+}
+
+.boton-enviar button {
+  border-radius: 4px;
+  background-color: #3483fa;
+  border-color: transparent;
+  color: #fff;
+  margin-top: 20px;
+  width: auto;
+  padding: 0px 64px;
+}
+
+form button {
+  border-radius: 4px;
+  background-color: #3483fa;
+  border-color: transparent;
+  color: #fff;
+  margin-top: 20px;
+  width: auto;
+  padding: 0px 64px;
+}
+
+.off {
+  font-size: 16px;
+  color: rgb(38, 230, 38);
+}
+
+.fa-gift {
+  color: #1259c3;
+  font-size: 20px;
+}
+
+.fa-credit-card {
+  color: #1259c3;
+  font-size: 20px;
+}
+
+.fa-user-shield {
+  color: #1259c3;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.login input {
+  font-family: inherit;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: auto;
+  padding: 5px 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 1.5px;
+}
+
+.Copyright {
+  color: #9b9999;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.cajita {
+  width: 100%;
+  background-color: white;
+  border-top: solid 1px #ebebeb;
+}
+
+.caja {
+  width: 100%;
+  margin-bottom: 10px;
+  /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+  padding: 15px;
+}
+.login form {
+  text-align: center;
+}
+/*////////HOVER/////////*/
+.caja:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.caja:hover .description {
+  display: flex;
+}
+
+.fa-truck:hover {
+  transform: rotateZ(-90deg);
+  transition-duration: 700ms;
+}
+/* //////// */
+.caja img {
+  width: 100%;
+}
+.registro-foot {
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.login-foot{
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+@media (min-width: 460px) {
+  /*.cajita .description{
+      display: flex;
+   }*/
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar2 {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .caja {
+    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .login {
+    display: block;
+  }
+
+  .login input {
+    width: 300px;
+  }
+  .boton-enviar button {
+    padding: 0 129px;
+  }
+  .registro-foot {
+    text-align: center;
+    display: flex;
+    padding: 20px;
+  }
+  .login-foot{
+    text-align: center;
+    display: flex;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  /*.description{
+      display: flex;
+   }*/
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    margin: 0 5px;
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 180px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .caja {
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+  }
+  .login input {
+    width: 400px;
+  }
+  .boton-enviar button {
+    padding: 0 180px;
+  }
+  .registro-foot {
+    text-align: center;
+    display: flex;
+    padding: 20px;
+  }
+}
+
+.banner img {
+  width: 100vw;
+}
+
+.cajita > .fa-truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.cajita {
+  position: relative;
+}
+/*//////FORMULARIO Y LOGIN//////*/
+.formulario {
+  padding: 10px;
+  margin: auto;
+}
+
+.formulario div {
+  padding: 5px;
+}
+
+.login {
+  padding: 10px;
+  margin: auto;
+  justify-content: center;
+}
+
+.boton-enviar:hover button {
+  background-color: #0022aa;
+}
+
+.login div {
+  padding: 2px;
+}
+
+
+main label {
+  font-weight: bold;
+}
+
+main.login span {
+  color: red;
+  display: block;
+}
+.formulario input {
+  font-family: inherit;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  padding: 5px 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 1.5px;
+}
